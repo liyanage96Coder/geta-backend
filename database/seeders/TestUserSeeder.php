@@ -11,10 +11,10 @@ class TestUserSeeder extends Seeder
     public function run(): void
     {
         User::updateOrCreate(
-            ['email' => 'test@example.com'],
+            ['email' => 'kernel@kernel.com'],
             [
                 'name' => 'Test User',
-                'password' => Hash::make('Test@12345'),
+                'password' => Hash::make('KernelUser@123'),
             ]
         );
     }
